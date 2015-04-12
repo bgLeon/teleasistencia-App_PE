@@ -58,10 +58,6 @@ public class DatosEndpoint {
 			cursor = JDOCursorHelper.getCursor(execute);
 			if (cursor != null)
 				cursorString = cursor.toWebSafeString();
-
-			// Tight loop for fetching all entities from datastore and
-			// accomodate
-			// for lazy fetch.
 			for (Datos obj : execute)
 				;
 		} finally {
