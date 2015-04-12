@@ -14,21 +14,21 @@ public class Datos {
 	@Persistent
 	private double latitud;
 	@Persistent
-	private double longitud;
-	
+	private double longitud;	
 	@Persistent
 	private double aceleracion_x;
 	@Persistent
 	private double aceleracion_y;
 	@Persistent
 	private double aceleracion_z;
-	
 	@Persistent	
 	private double giroscopio_x;
 	@Persistent
 	private double giroscopio_y;
 	@Persistent
 	private double giroscopio_z;
+	@Persistent
+	private String imei;
 	
 	@Persistent
 	private int pulso;
@@ -93,7 +93,13 @@ public class Datos {
 	public double getAceleracion_z() {
 		return aceleracion_z;
 	}
+	public String getImei() {
+		return imei;
+	}
 
+	public void setImei(String imei) {
+		this.imei = imei;
+	}
 	public void setAceleracion_z(double aceleracion_z) {
 		this.aceleracion_z = aceleracion_z;
 	}
